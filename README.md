@@ -1,7 +1,7 @@
 <a name="readme-top"></a>
 
 <div align="center">
-  # 📖 School Library <a name="about-project"></a>
+  <h3>📖 School Library</h3>
 
 </div>
 
@@ -112,7 +112,7 @@ Please support this project and be a part of something meaningful and impactful.
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-To all the individuals whose creativity and dedication inspired the codebase, I want to express my heartfelt gratitude. Your tireless efforts have left an indelible mark on this project and your contributions will be remembered for years to come. Thank you for being an integral part of our success.
+Grateful to all for inspiring codebase, your dedication and creativity made a lasting impact on our success. Thank you!
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
