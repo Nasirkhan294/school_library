@@ -1,7 +1,7 @@
-# school_library<a name="readme-top"></a>
+<a name="readme-top"></a>
 
 <div align="center">
-  <h3>School Library</h3>
+  # 📖 School Library <a name="about-project"></a>
 
 </div>
 
