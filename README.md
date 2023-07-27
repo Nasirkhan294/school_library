@@ -42,6 +42,7 @@
 
 - [x] **Ruby classes**
 - [x] **Ruby decorator**
+- [x] **Ruby associations**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -86,7 +87,6 @@ git clone git@github.com:Nasirkhan294/school_library.git
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **Association Setup**
 - [ ] **Basic UI**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
