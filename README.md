@@ -28,7 +28,7 @@
 
 # 📖 School Library <a name="about-project"></a>
 
-**School Library:** Welcome to the school library, a showcase of object-oriented programming concepts in action. Explore our code for an enriching learning experience! 📚
+**School Library:** This project employs Object-Oriented Programming (OOP) principles to create an intuitive console application for managing a library system using Ruby. It facilitates librarians in performing various tasks, including adding new students and teachers, adding new books to the library, and maintaining records of book borrowings, along with corresponding borrowing dates. 📚
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -43,6 +43,7 @@
 - [x] **Ruby classes**
 - [x] **Ruby decorator**
 - [x] **Ruby associations**
+- [x] **Basic UI**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -87,7 +88,8 @@ git clone git@github.com:Nasirkhan294/school_library.git
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **Basic UI**
+- [ ] **Preserve Data**
+- [ ] **Unit Tests**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
