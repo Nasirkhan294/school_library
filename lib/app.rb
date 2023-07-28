@@ -4,7 +4,7 @@ require_relative 'teacher'
 require_relative 'student'
 require_relative 'classroom'
 require_relative 'rental'
-require_relative 'preson_creator'
+require_relative 'person_creator'
 require_relative 'book_creator'
 require_relative 'rental_creator'
 
@@ -28,7 +28,7 @@ class App
     end
   end
 
-  def create_person(_name, _role)
+  def create_person()
     puts 'Do you want to create a Student (1) or Teacher (2)? [Input the number]:'
     choice = gets.chomp.to_i
     person_creator = PersonCreator.new(@people)
@@ -40,7 +40,7 @@ class App
     end
   end
 
-  def create_book(_title, _author)
+  def create_book()
     book_creator = BookCreator.new(@books)
     book_creator.create_book
   end

@@ -9,9 +9,6 @@ def main
 
     break if choice == 7
 
-    puts 'Exiting the app. Goodbye!'
-    puts "\n"
-
     perform_action_for_input(choice, app)
     puts "\n" # Adding a newline for better formatting
   end
