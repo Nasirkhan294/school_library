@@ -38,19 +38,16 @@ class App
     when 2
       person_creator.create_teacher
     end
-    puts 'Person Created Successfully'
   end
 
   def create_book(_title, _author)
     book_creator = BookCreator.new(@books)
     book_creator.create_book
-    puts 'Book Created Successfully'
   end
 
   def create_rental()
     rental_creator = RentalCreator.new(@books, @people, @rentals)
     rental_creator.create_rental
-    puts 'Rental Created Successfully'
   end
 
   def list_rentals_by_person_id
