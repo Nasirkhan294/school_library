@@ -28,7 +28,7 @@ class App
     end
   end
 
-  def create_person(name, role)
+  def create_person(_name, _role)
     puts 'Do you want to create a Student (1) or Teacher (2)? [Input the number]:'
     choice = gets.chomp.to_i
     person_creator = PersonCreator.new(@people)
@@ -38,19 +38,19 @@ class App
     when 2
       person_creator.create_teacher
     end
-    puts "Person Created Successfully"
+    puts 'Person Created Successfully'
   end
 
-  def create_book(title, author)
+  def create_book(_title, _author)
     book_creator = BookCreator.new(@books)
     book_creator.create_book
-    puts "Book Created Successfully"
+    puts 'Book Created Successfully'
   end
 
   def create_rental()
     rental_creator = RentalCreator.new(@books, @people, @rentals)
     rental_creator.create_rental
-    puts "Rental Created Successfully"
+    puts 'Rental Created Successfully'
   end
 
   def list_rentals_by_person_id
