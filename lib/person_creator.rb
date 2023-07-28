@@ -16,7 +16,7 @@ class PersonCreator
     classroom_label = read_classroom_label_from_user_input
 
     student = create_new_student(name, age, parent_permission, classroom_label)
-    puts "Student created successfully #{student.name} with id #{student.id}"
+    puts "Student created successfully:"
   rescue ArgumentError => e
     puts "Error: #{e.message}"
   end
@@ -45,6 +45,7 @@ class PersonCreator
     student = Student.new(name, age, parent_permission: parent_permission,
                                      classroom: Classroom.new(classroom_label))
     @people << student
+    student
   end
 
   def create_teacher
@@ -53,7 +54,7 @@ class PersonCreator
     specialization = read_teacher_specialization_from_user_input
 
     teacher = create_new_teacher(name, age, specialization)
-    puts "Teacher created successfully #{teacher.name} with id #{teacher.id}"
+    puts "Teacher created successfully:"
   rescue ArgumentError => e
     puts "Error: #{e.message}"
   end

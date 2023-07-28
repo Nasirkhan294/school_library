@@ -17,13 +17,13 @@ class App
   end
 
   def list_books
-    @books.each do |_book|
+    @books.each do |book|
       puts "Title:\"#{book.title}\", Author: #{book.author}"
     end
   end
 
   def list_people
-    @people.each do |_person|
+    @people.each do |person|
       puts "[#{person.class.name}] Name: #{person.name}, ID: #{person.id}, Age: #{person.age}"
     end
   end

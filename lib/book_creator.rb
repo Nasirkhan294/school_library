@@ -14,7 +14,7 @@ class BookCreator
     return if book_already_exists(title, author)
 
     book = create_new_book(title, author)
-    puts "Book create sucessfully: '#{book.title}' by #{book.author}"
+    puts "Book create sucessfully:"
   rescue ArgumentError => e
     puts "Error: #{e.message}"
   end
