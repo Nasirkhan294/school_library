@@ -82,6 +82,12 @@ git clone git@github.com:Nasirkhan294/school_library.git
 - Twitter: [NasirMa35888225](https://twitter.com/NasirMa35888225)
 - LinkedIn: [nasirmahd](https://www.linkedin.com/in/nasirmahd/)
 
+👤 **Alishah**
+
+- GitHub: [AliShahSafdari](https://github.com/AliShahSafdari)
+- LinkedIn: [AlishahSafdari](https://www.linkedin.com/in/alishahsafdari/)
+
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- FUTURE FEATURES -->

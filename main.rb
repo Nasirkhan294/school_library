@@ -1,20 +1,5 @@
 require_relative 'lib/app'
 
-def main
-  app = App.new
-
-  loop do
-    display_options_list
-    choice = read_user_choice_from_options
-
-    break if choice == 7
-
-    perform_action_for_input(choice, app)
-    # Adding a newline for better formatting
-    puts "\n"
-  end
-end
-
 def display_options_list
   puts 'Please choose an option by entering a number:'
   puts '1. List all books'
@@ -39,6 +24,21 @@ def perform_action_for_input(choice, app)
   when 5 then app.create_rental
   when 6 then app.list_rentals_by_person_id
   else puts 'Invalid choice. Please try again.'
+  end
+end
+
+def main
+  app = App.new
+
+  loop do
+    display_options_list
+    choice = read_user_choice_from_options
+
+    break if choice == 7
+
+    perform_action_for_input(choice, app)
+    # Adding a newline for better formatting
+    puts "\n"
   end
 end
 
