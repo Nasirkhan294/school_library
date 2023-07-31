@@ -10,7 +10,8 @@ def main
     break if choice == 7
 
     perform_action_for_input(choice, app)
-    puts "\n" # Adding a newline for better formatting
+    # Adding a newline for better formatting
+    puts "\n"
   end
 end
 
