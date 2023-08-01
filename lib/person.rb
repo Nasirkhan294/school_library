@@ -24,6 +24,19 @@ class Person < Nameable
     @name
   end
 
+  def to_hash
+    {
+      age: @age,
+      name: @name
+    }
+  end
+
+  def self.from_hash(hash)
+    age = hash['age']
+    name = hash['name']
+    new(name, age)
+  end
+
   private
 
   def of_age?
