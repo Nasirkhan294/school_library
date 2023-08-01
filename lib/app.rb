@@ -96,12 +96,16 @@ class App
     File.write('books.json', JSON.generate(books_data))
 
     people_data = @people.map(&:to_hash)
-    File.write('people.json', JSON.generate(people_data))
+    File.write('pepole.json', JSON.generate(people_data))
+
+    rental_data = @rentals.map(&:to_hash)
+    File.write('rentals.json', JSON.generate(rental_data))
   end
 
   def load_data
     @books = read_books_from_file
     @people = read_people_from_file
+    @rentals = read_rentals_from_file
   end
 
   private
@@ -116,6 +120,13 @@ class App
   def read_people_from_file
     people_data = JSON.parse(File.read('people.json'))
     people_data.map { |person_data| Person.from_hash(person_data) }
+  rescue Errno::ENOENT
+    [] # Return an empty array if the file doesn't exist or is empty
+  end
+
+  def read_rentals_from_file
+    rentals_data = JSON.parse(File.read('rentals.json'))
+    rentals_data.map { |rental_data| Rental.from_hash(rental_data) }
   rescue Errno::ENOENT
     [] # Return an empty array if the file doesn't exist or is empty
   end
