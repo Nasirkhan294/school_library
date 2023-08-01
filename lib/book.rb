@@ -12,4 +12,17 @@ class Book
     @rentals << rental
     person.add_rental(rental)
   end
+
+  def to_hash
+    {
+      title: @title,
+      author: @author
+    }
+  end
+
+  def self.from_hash(hash)
+    title = hash['title']
+    author = hash['author']
+    new(title, author)
+  end
 end

@@ -1,3 +1,4 @@
+require 'json'
 require_relative 'book'
 require_relative 'person'
 require_relative 'teacher'
@@ -88,5 +89,23 @@ class App
     rentals.each do |rental|
       puts "Date: #{rental.date}, Book \"#{rental.book.title}\" by #{rental.book.author}"
     end
+  end
+
+  def store_data
+    books_data = @books.map(&:to_hash)
+    File.write('books.json', JSON.generate(books_data))
+  end
+
+  def load_data
+    @books = read_books_from_file
+  end
+
+  private
+
+  def read_books_from_file
+    books_data = JSON.parse(File.read('books.json'))
+    books_data.map { |book_data| Book.from_hash(book_data) }
+  rescue Errno::ENOENT
+    [] # Return an empty array if the file doesn't exist or is empty
   end
 end

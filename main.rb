@@ -29,6 +29,7 @@ end
 
 def main
   app = App.new
+  app.load_data
 
   loop do
     display_options_list
@@ -39,6 +40,10 @@ def main
     perform_action_for_input(choice, app)
     # Adding a newline for better formatting
     puts "\n"
+  end
+
+  at_exit do
+    app.store_data
   end
 end
 
